@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+	android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:paddingBottom="@dimen/activity_vertical_margin"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin"
+		    tools:context="edu.ucuccs.urdanetafoodmap.SubmitPhoto" >
+		
+		    <ImageView
+		        android:id="@+id/imgView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:contentDescription="@string/map"
+		        android:src="@drawable/icon_map" />
+
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5sp"
+		        android:layout_marginTop="5dp"
+		        android:paddingTop="10dp"
+		        android:text="@string/title"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        android:textColor="#163F5F"
+		        android:textStyle="bold" />
+		    
+		    <EditText
+		        android:id="@+id/txtTitle"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="text" >
+
+		        <requestFocus />
+		    </EditText>
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5sp"
+		        android:layout_marginTop="5dp"
+		        android:paddingTop="5dp"
+		        android:text="@string/des"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        android:textColor="#163F5F"
+		        android:textStyle="bold" />
+		    
+		    <EditText
+		        android:id="@+id/txtDescription"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="text"
+		        android:maxLength="250"
+		        android:singleLine="false" >
+
+		    </EditText>
+		
+		    <Button
+		        android:id="@+id/btnsubmit"
+		        style="@style/btnStyleShakespeare"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp"
+		        android:onClick="clickSubmit"
+		        android:text="@string/report" />
+
+			<Button
+			    android:id="@+id/btnCancel"
+			    style="@style/btnStyleShakespeare"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:onClick="clickCancel"
+			    android:text="@string/cancel" />
+
+		</LinearLayout>
+</ScrollView>
